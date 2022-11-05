@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-image: url('https://source.unsplash.com/1600x900/?tokyo');
+}
+.card {
+	background-color: rgba(36, 34, 34,0.85);
+	color: white;
+    padding: 2em;
+	border-radius: 30px;
+	width: 100%;
+	max-width: 420px; 
+    margin:1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 130%;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 4em;
+    width: 4em;
+    outline:none;
+    background-color: rgba(77, 73, 73, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: rgba(77, 73, 73, 1);
+}
+
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 27px;
+    background-color: rgba(77, 73, 73, 0.5);
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width:70%;
+}
+
+h1.temp{
+    margin: 0;
+}

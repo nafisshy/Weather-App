@@ -1,13 +1,21 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
+  plugins: [
+    // eslint-disable-next-line no-undef
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      // eslint-disable-next-line no-dupe-keys
+      title: 'Weather App',
+    }),
+  ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-
     rules: [
 
       {
@@ -35,4 +43,5 @@ module.exports = {
     ],
 
   },
+  mode: 'development',
 };
