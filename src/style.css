@@ -76,3 +76,6 @@ h1.temp{
     animation: rotate 2s linear infinite;
 }
 
+.invisible{
+    display: none !important;
+}
