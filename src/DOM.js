@@ -15,4 +15,8 @@ function changeCard(city, temp, icon, description, humidity, wind, feelsLike) {
   feelsLikeElement.textContent = `Feels Like: ${feelsLike}°C`;
 }
 
-export default {changeCard};
+function changeBackground(city) {
+  document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?${city})`;
+}
+
+export default { changeCard, changeBackground };
